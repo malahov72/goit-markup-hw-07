@@ -1,0 +1,160 @@
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.card-set__group {
+  padding: 25px 100px;
+  border-radius: 4px;
+  background-color: var(--secondary-background-color);
+  margin-bottom: 30px;
+  border-color: var(--primery-white-color);
+  transition: fill var(--transition);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.card-set__title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--titul-text-color);
+  margin-bottom: 10px;
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.item {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.card-set__item {
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+.about__item,
+.product {
+  flex-basis: calc(100% / 3 - 30px);
+}
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+.about {
+  padding-top: 0;
+}
+
+.about__item {
+  position: relative;
+}
+
+.about__info {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.about__text {
+  position: absolute;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primery-white-color);
+}
+
+.section__title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--titul-text-color);
+  margin-bottom: 50px;
+}
+
+.team-meta {
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primery-white-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-meta__name {
+  font-weight: 500;
+  color: var(--titul-text-color);
+  margin-bottom: 10px;
+}
+
+.team-meta__profession,
+.team-meta__name {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-meta__profession {
+  margin-bottom: 16px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--primery-white-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--icon);
+  transition: color var(--transition), background-color var(--transition);
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+    color: var(--primery-white-color);
+  }
+}
+
+.footer .social__link {
+  background-color: var(--footer-background-icon-color);
+  color: var(--primery-white-color);
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+  }
+}
+
+.contacts__icon,
+.social__link,
+.social__icon {
+  fill: currentColor;
+}
