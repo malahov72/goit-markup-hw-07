@@ -1,0 +1,30 @@
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--primery-white-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--icon);
+  transition: color var(--transition), background-color var(--transition);
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+    color: var(--primery-white-color);
+  }
+}
+.contacts__icon,
+.social__link,
+.social__icon {
+  fill: currentColor;
+}

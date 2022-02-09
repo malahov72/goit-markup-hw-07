@@ -1,14 +1,21 @@
 @import "./utils/variables";
+
 @import "./base/reset";
 @import "./base/common";
+
 @import "./components/container";
 @import "./components/logo";
-@import "./components/header";
-@import "./components/section-hero";
-@import "./components/hero-btn";
-@import "./components/modal";
-@import "./components/feature";
-@import "./components/clients";
-@import "./components/footer";
-@import "./components/filter-btn";
-@import "./components/portfolio";
+@import "./components/section";
+@import "./components/card-set";
+@import "./components/item";
+@import "./components/button";
+@import "./components/social";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/modal";
+@import "./layout/filter-btn";
+@import "./layout/feature";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/portfolio";
